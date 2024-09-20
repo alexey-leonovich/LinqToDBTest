@@ -7,8 +7,11 @@ namespace TestAppNFW
     {
         static void Main(string[] args)
         {
+            var val = Class1.TestDatabaseEdit();
+            Console.WriteLine($"TestDatabaseEdit - OK! Val = {val}");
             Class1.TestConnectionFTS5Init();
             Console.WriteLine("TestConnectionFTS5Init - OK!");
+            Console.ReadKey();
         }
     }
 }
